@@ -1,0 +1,60 @@
+body{
+
+    background-color: #121212;
+
+}
+
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.head{
+  width:100%;
+  background-color:#BB86FC;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding:3%;
+}
+
+.rooms{
+  padding:10px;
+  margin:10px;
+  font-size: 0.8em;
+  min-width: 130px;
+}
+.nowrap {
+    white-space: nowrap;
+}
+
+.chatter-body{
+  padding:10%;
+  background-color: #03DAC6;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.create{
+  padding:5%;
+}
+.join{
+  padding:5%;
+  
+}
+.rname{
+width:60%;
+margin:0 auto;
+float:none;
+margin-bottom:10px;
+}
+
+::placeholder{
+  font-size:68%;
+}
+
+.hid{
+  display:none;
+}

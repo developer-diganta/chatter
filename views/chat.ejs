@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/801df24b2e.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Chatter - Room Name: <%=rn%></title>
+</head>
+<body>
+
+  <div class="container">
+    <!-- <div class="head">
+      <img class="chatter" src="chatter.png" alt="chatter" height="60%" width="60%"/>
+    </div> -->
+  <div class="navb">
+    <nav class="navbar navbar-light nav-pad">
+      <!-- <div class="container"> -->
+        <span class="navbar-brand" style="margin-left:3%;">
+          <img src="chatter.png" alt="chatter" width="100" height="75">
+        </span>
+        <a href="/" style="margin-right:3%;"><button type="button" class="btn btn-danger" >Leave Room</button></a>
+
+
+    <!-- </div> -->
+    </nav>
+  </div>
+
+    <div class="chatter-body">
+
+    <div class="row">
+
+      <div class="col-md-3 col-lg-4 names">
+    <div class="ro-name">
+
+      <!-- <h3 style="text-align:center">Hi, Diganta!</h3>
+      <h4 style="text-align:center">Room Name : Aeak</h4>
+      <div class="participants">
+      <h4>Users</h4>
+        <ul style="list-style-type:none">
+          <li>one</li>
+          <li>one</li>
+          <li>one</li>
+          <li>one</li>
+
+        </ul> -->
+        <h3>Hi,<span id="nm"><%=name%></span></h3>
+        <!-- <h4></h3> -->
+        <h4 id="room-name"><i class="fas fa-comments"></i> Room Name:<%=rn%></h4>
+        <h4 ><i class="fas fa-users"></i> Users</h3>
+          <div class="participants">
+            <ul id="users">
+            </ul>
+
+
+
+      </div>
+    </div>
+      </div>
+
+      <div class="col-md-9 col-lg-8">
+        <div class="chat-back">
+<div class="chat-messages">
+  <div class="message">
+
+
+  </div>
+</div>
+
+        </div>
+        <div class="chat-form-container">
+          <form id="chat-form">
+            <input
+              id="msg"
+              type="text"
+              placeholder="Enter Message"
+              required
+              autocomplete="off"
+            />
+            <button class="sd"><i class="fas fa-paper-plane"></i> Send</button>
+          </form>
+
+      </div>
+
+
+
+    </div>
+
+
+    </div>
+  </div>
+
+  </div>
+</body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js" integrity="sha512-BHtomM5XDcUy7tDNcrcX1Eh0RogdWiMdXl3wJcKB3PFekXb3l5aDzymaTher61u6vEZySnoC/SAj2Y/p918Y3w==" crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js" charset="utf-8"></script>
+
+  <script src="js/main.js"></script>
+
+</html>
